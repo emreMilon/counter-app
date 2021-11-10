@@ -1,7 +1,8 @@
-import * as React from "react"
-import { webpack } from "webpack"
+import  React from "react"
 import "./App.scss"
-import * as webpackImage from "./assets/webpack.svg"
+import webpackImage from "./assets/webpack.svg"
+
+
  
 const  App = () => {
     const [counter, setCounter] = React.useState<number>(0)
@@ -37,7 +38,7 @@ const  App = () => {
                     <button onClick={()=>onDecrement(demand)} >Decrement</button>
                 </div>
             </div>
-            <img src={webpackImage.default} />
+            <img src={webpackImage} />
         </div>
     )
 }

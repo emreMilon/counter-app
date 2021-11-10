@@ -1,12 +1,16 @@
 {
     "compilerOptions": {
-      "outDir": "./public/",
+
       "noImplicitAny": true,
       "module": "es6",
       "target": "es5",
       "jsx": "react",
       "allowJs": true,
-      "moduleResolution": "node"
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "typeRoots": ["./types", "./node_modules/@types"] // @typesfolder create a "third-party-module-name" folder inself touch index.d.ts and declare module "third-party-module-name"
     },
-    "include": ["src","custom.d.ts"] /// <-- Like this!!
+    "include": ["src","custom.d.ts"],
+    "exclude": ["node_modules", "typings"] 
   }
